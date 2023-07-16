@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c998282479.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="C:\Users\harsiddhtamboli\Desktop\portfolio\image\Harsiddh Tamboli.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Associate Data Analyst</p>
+                    <h1>Hi, I am<br><span>Harsiddh</span> Tamboli</h1>
+                </div>
+            </div>
+        </div>
+        <!-- ----------about-section--------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="C:\Users\harsiddhtamboli\Desktop\portfolio\image\IMG_1436.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a meticulous and organised individual with 1+ year of experience as an associate Data Analyst
+                            looking for a position in Software Development and Data Science to expand my knowledge and skills and
+                            work for the overall growth of an organization. Strong in design and integration with intuitive problem-solving
+                            skills, proficient in PYTHON, SQL and MS Excel and passionate about implementing and launching new projects
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Python, SQL, C++</li>
+                                <li><span>Visualisation and Analytical tool</span><br>MS Excel, Power BI</li>
+                                <li><span>Technical Skills</span><br>Data Structure and Algorithm, OOPs, ETL,
+                                Machine Learning, Statistics and probability</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id ="experience">
+                            <ul>
+                                <li><span>March, 2022 - March, 2023</span><br>Associate Data Analyst</li>
+                                <!-- --------------need to add more about work experience---------------- -->
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span><br>B.Tech from JECRC Foundation</li>
+                                <!-- -----------------need to add more about education------------------------- -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------service--------------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <h2>Data Visualisation</h2>
+                        <p>Visualising Data using Power BI and Tableau and also can be sone using MS Excel
+                            .Excel Can be used as a visualisation tool</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-meteor"></i>
+                        <h2>Prediction using ML Models</h2>
+                        <p>As a demanding needs of data-driven solution. organization needs to work on imporving
+                             AI and ML model for getting better solution.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-people-group"></i>
+                        <h2>Deep Learning Service</h2>
+                        <p>Customer segmentation, sentiment analysing and Natural Language processing
+                             are some of the predictive deep learning models.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------------portfolio--------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="C:\Users\harsiddhtamboli\Desktop\portfolio\image\work-1.png">
+                        <div class="layer">
+                            <h3>Flight Price Prediction</h3>
+                            <p>This is Flask web app which predicts price of flight ticket.
+                            It takes input such as source, destination, date and time of journey and predict the price of ticket.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="C:\Users\harsiddhtamboli\Desktop\portfolio\image\work-2.png">
+                        <div class="layer">
+                            <h3>Credit Card Defaulter Detector</h3>
+                            <p>This is Flask web application which helps user to get know about the bank consumer whether 
+                                he/she is eligilble for credit card or not.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="C:\Users\harsiddhtamboli\Desktop\portfolio\image\work-3.png">
+                        <div class="layer">
+                            <h3>Customer sentiment Analysis</h3>
+                            <p>By looking the data about the purchases and visiting information about the customer is
+                                enough to know the about the customer sentiment.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!-- ------------------contact------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> harsiddh.tamboli8055@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> (+91)-7300377712</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/harsiddh-tamboli-602073183/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/harsiddh-11"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="C:\Users\harsiddhtamboli\Desktop\portfolio\image\Minimalist White and Grey Professional Resume (1).pdf" download class="btn btn2">Downlaod CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Harsiddh. Made with <i class="fa-solid fa-poo"></i> Khoon paseena</p>
+            </div>
+        </div>
+        <script>
+            // --------adding script tag to add javascript-------------
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for (tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+    </body>
+</html>
